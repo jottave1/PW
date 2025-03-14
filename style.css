@@ -1,0 +1,10 @@
+div {
+    border:1px solid #FF0000
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #CCCCCC;
+
+}
