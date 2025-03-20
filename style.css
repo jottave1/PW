@@ -47,6 +47,7 @@ html, body {
 
 .botao-card{
     background-color: #0aa2bd;
+    border: #0aa2bd;
     font-weight: bold;
     color: #ffffff;
     width: 100%;
