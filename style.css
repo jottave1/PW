@@ -5,13 +5,13 @@ div {
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #4682B4;
+    background-color: #745077;
 
 }
 
 .card{
     width: 268px;
-    
+    margin: 45px    ;
     background-color: #FFFFFF;
 }
 
@@ -24,7 +24,7 @@ html, body {
 
 .descricao{
     font-size: 15px;
-    font-family: Lovelyn;
+    font-family: helvetica;
     font-weight: bold;
     padding: 10px 5px;
 }
@@ -32,13 +32,13 @@ html, body {
 .preco{
     font-size: 25px;
     font-family: helvetica;
-    color: #0aa2bd;
+    color: #585252;
     font-weight: bold;
     padding: 10px 5px;
 }
 
 .pagamento{
-    color: #0aa2bd;
+    color: #585252;
     background-color: #FFFFFF;
     font-family: Arial;
     font-size: 15px;
@@ -46,28 +46,32 @@ html, body {
 }
 
 .botao-card{
-    background-color: #0aa2bd;
-    border: #0aa2bd;
+    background-color: #9887ac;
+    border: #FAEBD7;
     font-weight: bold;
-    color: #F0E68C;
+    color: #ffffff;
     width: 100%;
     height: 45px;
     font-size: 16px;
     text-align: center;
-    font-family: Arial;
+    font-family: helvetica;
 }
 
 .menu{
-    background-color: #666666;
+    background-color: #ffffff;
     color: #FFFFFF;
     border: 1px solid;
     display:flex;
 }
 
 .item-menu{
+    text-align: center;
     list-style: none;
     padding: 10px 20px;
+    width: 500px;
+    font-family: arial;
 }
+
 
 .item-menu:hover{
     background-color: #999999;
