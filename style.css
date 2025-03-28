@@ -1,4 +1,5 @@
-div {
+
+div{
     
 }
 
@@ -13,6 +14,9 @@ html, body {
     width: 268px;
     margin: 45px    ;
     background-color: #FFFFFF;
+    border-radius: 10px;
+    top: 50px;
+    margin-top: 40px;
 }
 
 .img-card{
@@ -50,11 +54,13 @@ html, body {
     border: #FAEBD7;
     font-weight: bold;
     color: #ffffff;
-    width: 100%;
+    width: 100%;        
     height: 45px;
     font-size: 16px;
     text-align: center;
     font-family: helvetica;
+    border-radius: 4px;
+   
 }
 
 .menu{
@@ -62,14 +68,40 @@ html, body {
     color: #FFFFFF;
     border: 1px solid;
     display:flex;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;  /* Faz o menu ocupar toda a largura */
 }
+
+.menu {
+    background-color: white;  
+    padding: 15px 0;  
+    text-align: center;
+    margin-top: auto; 
+}
+
+.menu a {
+    text-decoration: none;  
+    font-size: 18px;  
+    font-weight: bold;  
+    color: purple;  
+    margin: 0 20px;  
+    transition: 0.3s;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover {
+    color: darkviolet;  
+    text-decoration: underline; 
+}
+
 
 .item-menu{
     text-align: center;
     list-style: none;
     padding: 10px 20px;
     width: 500px;
-    font-family: arial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -79,7 +111,15 @@ html, body {
 
 .link-menu{
     text-decoration: none;
-    color: #0c0a0a;
-    
+    background-color: #585252;
+    font-weight: bold;
+    font-size: 18px;
+    color: blueviolet;
 }
+
+.botao-card:hover{
+    background-color: #3d2752;
+}
+
+
 
