@@ -106,12 +106,12 @@ html, body {
 
 
 .item-menu:hover{
-    background-color: #999999;
+    background-color: #dbdbdb;
 }
 
 .link-menu{
     text-decoration: none;
-    background-color: #585252;
+    background-color: #ffffff;
     font-weight: bold;
     font-size: 18px;
     color: blueviolet;
@@ -121,5 +121,9 @@ html, body {
     background-color: #3d2752;
 }
 
-
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
 
