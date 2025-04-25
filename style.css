@@ -91,7 +91,7 @@ html, body {
     text-decoration: none;  
     font-size: 18px;  
     font-weight: bold;  
-    color: rgb(0, 0, 0);  
+    color: rgb(56, 56, 56);  
     margin: 0 20px;  
     transition: 0.3s;  
     font-family: Arial, Helvetica, sans-serif;
@@ -133,7 +133,7 @@ html, body {
 }
 
 .botao-card:hover{
-    background-color: #2b2b2b;
+    background-color: #4e4d4d;
 }
 
 .container-card{
@@ -142,21 +142,28 @@ html, body {
     border-radius: 10px;
 }
 
-.logotipo{
-     display: block;
-     margin: 0;
-     padding: 0;  
-     height: 50px;
-     background-color:#000000 ;
-     color: #ffffff 
-}
-
 .barra-topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background-color: #000000 
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .logotipo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    top: 12px;
   }
   
   .search-box {
