@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Elementos</title>
+</head>
+<body>
+    
+    <h1>Criação de Elementos</h1>
+
+
+    <label for="">tag</label>"
+    <input  id="texto" type="tag" name="texto" />
+    <label for="">texto</label>"
+    <input  id="texto" type="text" name="texto" />
+    <label for="">cor</label>"
+    <input  id="color" type="cor" name="cor" />
+    <div id="texto"></div>
+    <button onclick="criarElemento">
+        Gerar Elemento
+    </button>
+
+    <script>
+        function criarElemento()
+        {
+
+            for (var i = 0; i<10; i++)
+
+            {
+            
+
+            var cor = document.getElementById ('cor')
+            var digitado= document.getElementById ('texto')
+
+            var novoH1 = document.createElement(digitado.value)
+            novoH1.style.backgroundColor = cor.value
+            novoH1.style.color = '#FFFFFF'
+            novoH1.id = "titulo"
+            novoH1.classList.add("primeiroTitulo")
+            novoH1.innerText= tag.value
+
+            var div = document.getElementById('caixa')
+            div.append(novoH1)
+
+            console.log(novoH1)
+
+            }
+        }
+
+        
+
+    </script>
+
+</body>
+</html>
