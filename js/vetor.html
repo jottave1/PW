@@ -4,34 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vetor</title>
+    <title>vetor</title>
 </head>
 <body>
-    <input id="texto" name="texto" type="text">
-    <button onclick="adicionarimagem()">Adicionar</button>
-    <ul id= "listaimagens">
-    
+    <input id="texto" type="text" name="texto"/>
+    <button onclick="adicionarImagem()">Adicionar</button>
 
+    <ul id="listaImagens">
+
+      
+        
     </ul>
 
-    <li id="img"></li>
     <script>
 
-        function adicionarimagem()
-        {
-            var lista = document.getElementById('listaimagens')
+        function adicionarImagem(){
             var texto = document.getElementById('texto')
-            var item = document.createElement ("li")
-            var imagem = document.createElement('img')
+            var lista = document.getElementById ("listaImagens")
+            var item = document.createElement("li")
+            var img = document.createElement('img')
+
             img.src = texto.value
             img.width = 150
-            img.height = 75
+            img.heigh = 70
             item.append(img)
             lista.append(item)
+            
+
+
+            console.log(item)
+            console.log(texto)
         }
 
-    </script>
 
+        var nomes = ["João", "Barreto", "Gabryel", "Tocchetto", "Gabryel", "Guilherme", "Alicia", "Davi", "Fernando", "JM"]
+        //alert(nomes[numeroAleatorio(nomes.length)])
+
+        for(var i = 0; i < nomes.length; i++){
+            
+        }
+
+        function numeroAleatorio(numeroMaximo){
+            return Math.floor(Math.random() * numeroMaximo)
+        }
+
+       // nomes.forEach(
+       //     (valor, indice) => {
+      //          document.write("indice:"+indice+ " Valor é :"+valor+"<br>")
+      //      }
+        //  );
+      // nomes.reverse();
+
+      //  document.write("<hr>")
+
+       // nomes.forEach(
+         //   (valor, indice) => {
+          //      document.write("indice:"+indice+ " Valor é :"+valor+"<br>")
+         //   }
+      //  );
+
+
+      function exibirLista(lista){
+                document.write("<hr>")
+                lista.forEach(
+            (valor, indice) => {
+                document.write("<br>indice:"+indice+ " Valor é :"+valor+"<br>")
+            }
+        );
+                document.write("<hr>")
+            }
+
+
+            exibirLista(nomes)
+            nomes.reverse();
+            exibirLista(nomes);
+            nomes.unshift("Novo nome no inicio da lista")
+            exibirLista(nomes);
+            nomes.shift()
+            exibirLista(nomes);
+            nomes.push("Joaquim no final da lista")
+            exibirLista(nomes)
+            nomes.pop()
+            exibirLista(nomes)
+
+
+
+
+
+            
+
+
+            
+           
+
+
+       // nomes.reverse(); //Inverte a ordem dos elementos
+       // nomes.shitf(); //remove o primeiro item da lista
+       // nomes.unshift(0); //adiciona 0 no começo
+      // nomes.pop(); //remove o útlimo elemento
+      //  nomes.push(4); // adiciona 4 no final
+
+        //novo modelo de for
+       //nomes.forEach(
+           // (valor, indice) => {
+             //   console.log(indice+ " Valor é :"+valor)
+           // }
+     //   );
+    </script>
 
 </body>
 </html>
